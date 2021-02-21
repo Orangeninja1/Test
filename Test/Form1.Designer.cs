@@ -1,7 +1,7 @@
 ﻿
 namespace Test
 {
-    partial class Form1
+    partial class FrmTest
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,34 @@ namespace Test
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.BtnTest = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // BtnTest
+            // 
+            this.BtnTest.Location = new System.Drawing.Point(92, 32);
+            this.BtnTest.Name = "BtnTest";
+            this.BtnTest.Size = new System.Drawing.Size(75, 23);
+            this.BtnTest.TabIndex = 0;
+            this.BtnTest.Text = "Test";
+            this.BtnTest.UseVisualStyleBackColor = true;
+            this.BtnTest.Click += new System.EventHandler(this.BtnTest_Click);
+            // 
+            // FrmTest
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(256, 86);
+            this.Controls.Add(this.BtnTest);
+            this.Name = "FrmTest";
+            this.Text = "Test";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnTest;
     }
 }
 
